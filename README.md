@@ -2,9 +2,9 @@
 
 Participants:
 
-- Leader: [Name - ID]
-- Member: [Name - ID]
-- Member: [Name - ID]
+- Leader: [Nguyễn Đức Mạnh - 19521827]
+- Member: [Đặng Hải Trang Phúc - 19522026]
+- Member: [Võ Nguyễn Đăng Khoa - 19521704]
 
 
 Task management table: [here](https://trello.com/b/N0dTGGkV) [Replace by your public board later]
