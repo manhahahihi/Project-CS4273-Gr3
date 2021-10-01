@@ -7,7 +7,7 @@ Participants:
 - Member: [Võ Nguyễn Đăng Khoa - 19521704]
 
 
-Task management table: [here](https://trello.com/b/N0dTGGkV) [Replace by your public board later]
+Task management table: https://trello.com/b/i4QCkF2E/to-do-list
 
 UI / UX prototype: [here](https://www.figma.com/community/file/1017274846862703022) [Replace by your public prototype later]
 
