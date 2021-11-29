@@ -13,8 +13,8 @@ UI / UX prototype: [here](https://www.figma.com/file/UjL1qq9slTFCXCf6eIXR9X/Unti
 
 Tech stacks:
 
-- Front-end: [...]
-- Back-end: [...]
+- Front-end: reactjs
+- Back-end: reactjs
 - Database: [...]
 - ...
 
