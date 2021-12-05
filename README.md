@@ -15,7 +15,7 @@ Tech stacks:
 
 - Front-end: reactjs
 - Back-end: reactjs
-- Database: [...]
+- Database: MongoDB
 - ...
 
 Demo online: [link to website - update later]
