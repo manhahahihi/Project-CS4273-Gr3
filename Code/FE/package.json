@@ -1,38 +1,46 @@
 {
-  "name": "todo",
+  "name": "front",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fahad00cms.github.io/iiittlibrary",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material/textfield": "^11.0.0",
+    "chart.js": "^3.3.2",
+    "gh-pages": "^2.0.1",
+    "jquery": "^3.6.0",
+    "moment": "^2.23.0",
+    "multiselect-react-dropdown": "^1.6.13",
+    "react": "^16.7.0",
+    "react-chartjs-2": "^3.0.3",
+    "react-datepicker": "^3.8.0",
+    "react-dom": "^16.7.0",
+    "react-loadable": "^5.5.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "react-spinners": "^0.5.4",
+    "react-toastify": "^4.5.2",
+    "reactstrap": "^8.9.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "sass": "^1.32.13"
   }
 }

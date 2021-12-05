@@ -1,117 +1,142 @@
-import React, { useState, useEffect } from "react"
-import TodoItem from "./ToDoItem"
-import "./App.css"
-const App = (props) => {
-  const [items, setItems] = useState([])
-  const [currentItem, setCurrentItem] = useState("")
-  useEffect(() => {
-    readItem()
-  }, [])
+import React, { Component } from 'react';
+import Loadable from 'react-loadable';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.min.css';
+import {ToastContainer} from "react-toastify";
+import './App.css'
+const LoginIndex = Loadable({
+    loader: () => import('./components/login/Index'),
+    loading: () => <div> </div>,
+});
+const HomeIndex = Loadable({
+    loader: () => import('./components/home/Index'),
+    loading: () => <div> </div>,
+});
 
-  const readItem = () => {
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };
+const SideBar = Loadable({
+    loader: () => import('./components/sideBar/Index'),
+    loading: () => <div> </div>,
+});
+const NavBar = Loadable({
+    loader: () => import('./components/navbar/Index'),
+    loading: () => <div> </div>,
+});
 
-    fetch("http://127.0.0.1:5000/item", requestOptions)
-      .then(response => response.text())
-      .then(result => {
-        setItems(JSON.parse(result).items)
-      })
-      .catch(error => console.log('error', error));
-  }
+const BooksIndex = Loadable({
+    loader: () => import('./components/books/Index'),
+    loading: () => <div> </div>,
+});
+const BooksInfoIndex = Loadable({
+    loader: () => import('./components/booksinfo/Index'),
+    loading: () => <div> </div>,
+});
 
-  const updateItem = (updateItem, currentStatus) => {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+const BooksUpdateIndex = Loadable({
+    loader: () => import('./components/booksinfo/bookupdate'),
+    loading: () => <div> </div>,
+});
 
-    if (currentStatus === 'Completed') {
-      currentStatus = 'Not Started'
-    } else {
-      currentStatus = 'Completed'
+const StudentsInfoIndex = Loadable({
+    loader: () => import('./components/studentsinfo/Index'),
+    loading: () => <div> </div>,
+});
+
+const ReturnIndex = Loadable({
+    loader: () => import('./components/return/Index'),
+    loading: () => <div> </div>,
+});
+const StudentsIndex = Loadable({
+    loader: () => import('./components/students/Index'),
+    loading: () => <div> </div>,
+});
+
+const BooksManageMentIndex = Loadable({
+    loader: () => import('./components/booksManagement/Index'),
+    loading: () => <div> </div>,
+});
+
+const parameters = Loadable({
+    loader: () => import('./components/parameters/parameters'),
+    loading: () => <div> </div>,
+});
+
+const NotFound = Loadable({
+    loader: () => import('./components/notfound/Index'),
+    loading: () => <div> </div>,
+});
+
+
+
+
+
+class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            isAuthenticated: false
+        };
+        
+        this.handleUpdate = this.handleUpdate.bind(this)
     }
-    var raw = JSON.stringify({ "item": updateItem, "status": currentStatus });
 
-    var requestOptions = {
-      method: 'PUT',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
-    };
+ 
 
-    fetch("http://127.0.0.1:5000/item", requestOptions)
-      .then(response => response.text())
-      .then(result => {
-        console.log(result)
-        readItem()
-      })
-      .catch(error => console.log('error', error));
-  }
-  const deleteItem = (deleteItem) => {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    handleUpdate(isAuthenticated) {
+        this.setState({isAuthenticated},()=>{localStorage.setItem('dFauth',JSON.stringify({isAuthenticated}))});
+        
+    }
 
-    var raw = JSON.stringify({ "item": deleteItem });
 
-    var requestOptions = {
-      method: 'DELETE',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
-    };
 
-    fetch("http://127.0.0.1:5000/item", requestOptions)
-      .then(response => response.text())
-      .then(result => {
-        console.log(result)
-        readItem()
-      })
-      .catch(error => console.log('error', error));
-  }
-  const addItem = () => {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({ "item": currentItem });
-    setCurrentItem('')
-    var requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
-    };
-
-    fetch("http://127.0.0.1:5000/item", requestOptions)
-      .then(response => response.text())
-      .then(result => {
-        console.log(result)
-        readItem()
-      })
-      .catch(error => console.log('error', error));
-  }
-
-  return (
-    <div className="todo-list">
-      <h1> TO-DO LIST </h1>
-      <input value={currentItem} onChange={(event) => {
-        setCurrentItem(event.target.value);
-      }}
-      />
-
-      <button onClick={() => addItem()}>Add</button>
-      {
-        items && items.map(item => {
-          return <TodoItem
-            onUpdate={() => updateItem(item[0], item[1])}
-            onDelete={() => deleteItem(item[0])}
-            item={item[0]}
-            status={item[1]} />
-        })
-      }
-    </div>
-  )
-
+    
+componentDidMount(){
+    if(localStorage.getItem('dFauth')){
+                let p=localStorage.getItem('dFauth');
+                let z=JSON.parse(p);
+                this.setState({isAuthenticated:z.isAuthenticated})
+            }
+                
 }
 
+
+                                
+
+    render() {
+        return (
+            <BrowserRouter history={window.history} basename={process.env.PUBLIC_URL}>
+            {this.state.isAuthenticated ?
+                <div>
+                    <NavBar updateRoutes={this.handleUpdate} />
+                    <SideBar/>
+                    <Switch>
+                        
+                    <Route exact path="/" component={HomeIndex} />
+                    <Route path="/home" component={HomeIndex} />
+                    <Route path="/books" component={BooksIndex} />
+                    <Route exact path="/book" component={BooksIndex} />
+                    <Route path="/return" component={ReturnIndex} />
+                    <Route path="/students" component={StudentsIndex} />
+                    <Route path="/book/*" component={BooksInfoIndex} />
+                    <Route path="/bookUpdate/*" component={BooksUpdateIndex} />
+                    <Route path="/books_management" component={BooksManageMentIndex} />
+                    <Route path="/parameters" component={parameters} />
+                    <Route path="/student/*" component={StudentsInfoIndex} />
+                     <Route exact path="*" component={NotFound} />
+                    </Switch>
+                    
+                     <ToastContainer  className='toast-container' toastClassName="darkToast"  progressClassName="progressbar"  />
+                </div>
+                :
+                <Switch>
+
+                <Route path="/login" render={ () => <LoginIndex updateRoutes={this.handleUpdate}/> } />
+                <Route exact path="/" render={ () => <LoginIndex updateRoutes={this.handleUpdate}/> } />
+                <Route exact path="*" component={NotFound} />   
+                </Switch>
+            }
+            </BrowserRouter>
+        );
+    }
+}
+//#test
 export default App;

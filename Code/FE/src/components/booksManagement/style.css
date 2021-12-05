@@ -1,0 +1,218 @@
+.ml1
+{
+    margin-left: 10px;
+}
+.info-toast
+{
+    background-color: #3498db !important;
+    color: white !important;
+}
+.ml618
+{
+    margin-left: 622px !important;
+}
+.mt1
+{
+    margin-top: 10px;
+}
+.mb2
+{
+    margin-bottom: 20px;
+}
+.ml25
+{
+    margin-left: 25px !important;
+}
+.dialogFooter
+{
+	background-color: white !important;
+}
+
+/*title section*/
+.btn_normal{
+	color:#3AE7E1 !important;
+	background-color:white !important;
+	border-color: #3AE7E1 !important;
+	transition: all 1s ;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+
+.btn_normal:hover{
+	transform:translate(3px,5px);
+	transform-origin: 100%;
+	background-color: white !important;
+	color: #3AE7E1 !important;
+}
+
+.btndefaul{
+	color: whitesmoke !important;
+	background-color: #3AE7E1 !important;
+	border-color: #3AE7E1 !important;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+
+.btndefaul:hover{
+	transform:translate(3px,5px);
+	transform-origin: 100%;
+	color: white !important;
+	
+}
+
+.section-title_4 {
+	font-size: 28px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.14;
+	letter-spacing: normal;
+	color: #3e8177 !important;
+	margin-bottom: 22px;
+  width: 130px !important;
+  }
+  
+  .section-title_4:after {
+	content: "";
+	width: 50px;
+	height: 2px;
+	background: #3e8177;
+	position: absolute;
+	right: -60px;
+	top: 14px;
+  }
+
+  .ml-288{
+      margin-left: -288px !important;
+}
+
+.mt10
+{
+    margin-top: 90px !important;
+}
+
+/* this is ajust height area*/
+.table-height-book1
+{
+    height: 405px !important;
+}
+
+/* this is ajust size */
+.tableRow td
+{
+    font-size: 17px !important;
+}
+
+.mt-3-books
+{
+    margin-top: -40px !important;
+}
+.pageView > .pageRow#booksBlock{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: calc(100% - 80px);
+}
+.pageView > .pageRow#booksBlock > .thisBlock,
+.pageView > .pageRow#booksBlock > .thisBlock > .blockBody{
+    height: 100%;
+}
+.pageView > .pageRow.paginationRow{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+
+}
+#issueBook{
+    top:50px;
+}
+#issueBook .dialogBody > div{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(50% - 15px);
+}
+#issueBook .dialogBody > div:nth-child(even){
+    margin-left: 25px;
+}
+#issueBook .dialogBody > div:nth-child(odd){
+    margin-left: 25px;
+}
+
+
+#addBook{
+    top:40px !important;
+}
+#addBook .dialogBody > div{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(50% - 15px);
+}
+#addBook .dialogBody > div:nth-child(even){
+    margin-left: 25px;
+}
+#addBook .dialogBody > div:nth-child(odd){
+    margin-left: 25px;
+}
+
+.pageView > .pageRow#booksBlock .lg{
+    width: 240px;
+    text-align: center;
+}
+.pageView > .pageRow#booksBlock .md{
+    width: 200px;
+    text-align: center;
+}
+.pageView > .pageRow#booksBlock .sm{
+    width: 80px;
+    text-align: center;
+}
+.footer{
+    align-content: center;
+    text-align: center;
+    
+    /*margin-left: 36vw;
+    margin-right: 0px;*/
+    color:#707070;
+}
+.copies{
+
+padding-left: 50px !important;
+
+
+}
+
+
+
+.tableRow{
+
+    box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+    background: rgba(255,255,255,0.902);
+    border-collapse: collapse;
+        position:relative;
+                z-index:1;
+            transition: all 0.1s ease-in-out;
+
+
+}
+.tableRow:hover{
+box-shadow: inset 1px 1px 1px 1px #f2f3f4;
+z-index:100;
+background-color: #f2f3f4;
+position: relative;
+
+transform:scale(1.000001);
+font-weight:500;
+
+
+}
+
+
+
+
+

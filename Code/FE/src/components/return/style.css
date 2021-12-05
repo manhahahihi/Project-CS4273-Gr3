@@ -1,0 +1,258 @@
+.btn_normal{
+	color:#3AE7E1 !important;
+	background-color:white !important;
+	border-color: #3AE7E1 !important;
+	transition: all 1s ;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+
+.btn_normal:hover{
+	transform:translate(3px,5px);
+	transform-origin: 100%;
+	background-color: white !important;
+	color: #3AE7E1 !important;
+}
+
+.btndefaul{
+	color: whitesmoke !important;
+	background-color: #3AE7E1 !important;
+	border-color: #3AE7E1 !important;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+
+.btndefaul:hover{
+	transform:translate(3px,5px);
+	transform-origin: 100%;
+	color: white !important;
+	
+}
+.pageView > .pageRow#booksBlock{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: calc(100% - 80px);
+}
+
+.Link{
+    list-style-type: none !important;
+}
+.table-height
+{
+    height: 400px !important;
+}
+
+.pageView > .pageRow#booksBlock > .thisBlock,
+.pageView > .pageRow#booksBlock > .thisBlock > .blockBody{
+    height: 100%;
+}
+.pageView > .pageRow.paginationRow{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+
+}
+#issueBook{
+    top:50px;
+}
+#returnBook .dialogBody > div{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(50% - 15px);
+}
+#returnBook .dialogBody > div:nth-child(even){
+    margin-left: 25px;
+}
+#returnBook .dialogBody > div:nth-child(odd){
+    margin-left: 25px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+#addBook{
+    top:50px !important;
+}
+#addBook .dialogBody > div{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(50% - 15px);
+}
+#addBook .dialogBody > div:nth-child(even){
+    margin-left: 25px;
+}
+#addBook .dialogBody > div:nth-child(odd){
+    margin-left: 25px;
+}
+
+.pageView > .pageRow#booksBlock .lg{
+    width: 240px;
+    text-align: center;
+}
+.pageView > .pageRow#booksBlock .md{
+    width: 200px;
+    text-align: center;
+}
+.pageView > .pageRow#booksBlock .sm{
+    width: 80px;
+    text-align: center;
+}
+.footer{
+    align-content: center;
+    text-align: center;
+    
+    /*margin-left: 36vw;
+    margin-right: 0px;*/
+    color:#707070;
+}
+.copies{
+
+padding-left: 50px !important;
+
+
+}
+
+
+
+.tableRow{
+
+    box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+    background: rgba(255,255,255,0.902);
+    border-collapse: collapse;
+        position:relative;
+                z-index:1;
+            transition: all 0.1s ease-in-out;
+
+
+}
+.tableRow:hover{
+box-shadow: inset 1px 1px 1px 1px #f2f3f4;
+z-index:100;
+background-color: #f2f3f4;
+position: relative;
+
+transform:scale(1.000001);
+font-weight:500;
+
+
+}
+.redtxt{
+    color:red !important;
+}
+.bold{
+    font-weight: 550 !important;
+}
+
+
+/* table in books management*/
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+  }
+  
+  tr:hover{
+    background-color:#BCE6FF !important ;
+  }
+  
+  tr:hover td > a{
+    box-shadow: none;
+  }
+  
+  .table .thead-dark th{
+    color: #fff !important;
+    background-color: var(--dark) !important;
+    border-color: #32383e !important;
+    font-size: 17px;
+    height: 50px !important;
+  
+  }
+thead
+{
+    color: #fff !important;
+    background-color: var(--dark) !important;
+    border-color: #32383e !important;
+    font-size: 17px;
+    height: 60px !important;  
+
+}
+
+.mt1
+{
+    margin-top: 10px !important;
+}
+.mt-7{
+    margin-top: -70px !important;
+}
+table{
+    font-family: ''Raleway'' !important;
+    color: black !important;
+    font-size: 17px !important;
+  }
+
+  /*btn */
+  .btn_normal{
+	color:#3AE7E1;
+	background-color:white;
+	border-color: #3AE7E1;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+
+.btn_normal:hover{
+	transform:translate(3px,5px);
+	transform-origin: 100%;
+	background-color: white;
+	color: #3AE7E1;
+}
+
+.section-title-1 {
+	font-size: 28px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.14;
+	letter-spacing: normal;
+	color: #3e8177;
+	margin-bottom: 22px;
+  }
+  
+  .section-title-1:after {
+	content: "";
+	width: 50px;
+	height: 2px;
+	background: #3e8177;
+	position: absolute;
+	right: -60px;
+	top: 14px;
+  }
+
+  .mt-4
+  {
+      margin-top: -60px !important;
+  }
+
+  .mt4
+  {
+    margin-top: 30px !important;
+  }
+
+  .input-group
+  {
+      weight: 500px !important;
+  }
+  .ml70
+  {
+      margin-left:500px !important;
+  }
+  

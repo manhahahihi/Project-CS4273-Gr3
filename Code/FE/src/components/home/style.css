@@ -1,0 +1,414 @@
+video
+{
+	width: 100% !important;
+	height: 100% !important;
+  height: 315px !important;
+	object-fit: cover;
+}
+.mid
+{
+	width: 100%;
+	height: 315px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+ 	justify-content: center;
+}
+
+.color-overlay {
+	width: 100%;
+	height: 100%;
+	background: #202020;
+	opacity: .6;
+	position: absolute;
+  }
+
+.carousel-caption {
+	position: absolute;
+	top: 25%;
+}
+
+.carousel-caption h5 {
+	font-size: 330%;
+	color: #87CEFA;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 15px #000;
+  margin-top: 28px;
+}
+
+.btnStarted
+{
+  margin-left: 10px;
+	background:  #87CEFA !important;
+}
+
+
+.pageView > .pageRow#booksBlock2{
+  padding-top: 0;
+  padding-bottom: 0;
+  height: calc(100% - 200px);
+}
+.pageView > .pageRow#booksBlock2 > .thisBlock,
+.pageView > .pageRow#booksBlock2 > .thisBlock > .blockBody{
+  height: 100%;
+}
+.pageView > .pageRow.paginationRow{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+#issueBook{
+  top:50px;
+}
+#returnBook .dialogBody > div{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(50% - 15px);
+}
+#returnBook .dialogBody > div:nth-child(even){
+  margin-left: 25px;
+}
+#returnBook .dialogBody > div:nth-child(odd){
+  margin-left: 25px;
+}
+
+.mb5{
+margin-bottom: 50px !important;
+}
+
+.mt5{
+margin-top: 50px !important;
+}
+.mt6
+{
+margin-top: 60px;
+}
+.ml5
+{
+margin-left: 50px !important;
+}
+#addBook{
+  top:50px !important;
+}
+#addBook .dialogBody > div{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(50% - 15px);
+}
+#addBook .dialogBody > div:nth-child(even){
+  margin-left: 25px;
+}
+#addBook .dialogBody > div:nth-child(odd){
+  margin-left: 25px;
+}
+
+.pageView > .pageRow#booksBlock .lg{
+  width: 240px;
+  text-align: center;
+}
+.pageView > .pageRow#booksBlock .md{
+  width: 200px;
+  text-align: center;
+}
+.pageView > .pageRow#booksBlock .sm{
+  width: 80px;
+  text-align: center;
+}
+.footer{
+ align-content: center;
+  text-align: center;
+  
+  /*margin-left: 36vw;
+  margin-right: 0px;*/
+  color:#707070;
+}
+.copies{
+
+padding-left: 50px !important;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+html, body {
+font-family: ''Raleway'' !important;
+font-size: 16px !important;
+}
+table{
+font-family: ''Raleway'' !important;
+color: black !important;
+font-size: 17px !important;
+}
+
+
+.btn_normal{
+color:#3AE7E1;
+background-color:white;
+border-color: #3AE7E1;
+transition: all 1s;
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+
+}
+
+.btn_normal:hover{
+transform:translate(3px,5px);
+transform-origin: 100%;
+background-color: white;
+color: #3AE7E1;
+}
+
+/*title section*/
+.section-title {
+font-size: 28px;
+font-weight: 600;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.14;
+letter-spacing: normal;
+color: #3e8177;
+margin-bottom: 22px;
+width: 350px;
+}
+
+.section-title:after {
+content: "";
+width: 50px;
+height: 2px;
+background: #3e8177;
+position: absolute;
+right: -60px;
+top: 14px;
+}
+
+
+.tableRow{
+
+  box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+  background: rgba(255,255,255,0.902);
+  border-collapse: collapse;
+      position:relative;
+              z-index:1;
+          transition: all 0.1s ease-in-out;
+
+
+}
+.tableRow:hover{
+box-shadow: inset 1px 1px 1px 1px #f2f3f4;
+z-index:100;
+background-color: #f2f3f4;
+position: relative;
+
+transform:scale(1.000001);
+font-weight:500;
+
+
+}
+
+.redtxt{
+  color:red !important;
+}
+.bold{
+  font-weight: 550 !important;
+}
+
+.mt5
+{
+margin-top: 50px;
+}
+
+.border-left-success {
+  border-left: 0.25rem solid #99decc !important;
+}
+
+.border-left-primary {
+  border-left: 0.25rem solid #bad7df !important;
+}
+
+.border-left-info {
+  border-left: 0.25rem solid #36b9cc !important;
+}
+.border-left-warning {
+  border-left: 0.25rem solid #B0FEFE !important;
+}  
+
+.setBlue
+{
+  color:#B0FEFE !important ;
+}
+.testcolor{
+  color: #99decc !important;
+}
+.setpink{
+  color:#B0FEFE !important ;
+}
+.getBook{
+  color:#bad7df !important;
+}
+/*this is chart */
+.dropdown .dropdown-menu {
+  font-size: 0.85rem;
+}
+
+.dropdown .dropdown-menu .dropdown-header {
+  font-weight: 800;
+  font-size: 0.65rem;
+  color: #b7b9cc;
+}
+
+.dropdown.no-arrow .dropdown-toggle::after {
+  display: none;
+}
+.chart-area {
+  position: relative;
+  height: 10rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .chart-area {
+    height: 20rem;
+  }
+}
+
+.chart-bar {
+  position: relative;
+  height: 10rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .chart-bar {
+    height: 20rem;
+  }
+}
+
+.chart-pie {
+  position: relative;
+  height: 15rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .chart-pie {
+    height: calc(20rem - 43px) !important;
+  }
+}
+
+
+/*this is table*/
+table{
+  width:100%;
+}
+#example_filter{
+  float:right;
+}
+#example_paginate{
+  float:right;
+}
+
+table{
+font-size: 17px;
+}
+
+/* table in books management*/
+
+.table td > a.btn{
+padding: .3em 1em;
+font-size: 1.1em;
+margin: 0 .2em;
+}
+
+tr:hover{
+background-color:#BCE6FF !important ;
+}
+
+tr:hover td > a{
+box-shadow: none;
+}
+
+.table .thead-dark th{
+color: #fff !important;
+background-color: var(--dark) ;
+border-color: #32383e;
+font-size: 17px;
+height: 50px !important;
+
+}
+
+/*most popular*/
+.mt2
+{
+  margin-top: 20px;
+}
+
+.mb1
+{
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.background
+{
+  background-color: rgb(232, 250, 250);
+}
+
+.image-hover {
+  overflow: hidden;
+  }
+  
+  .image-hover img,
+  .image-hover .thumb-title1 {
+  transition: transform 0.4s;
+  /* Animation */
+  }
+  
+  .image-hover:hover img {
+  transform: scale(1.25);
+  }
+  
+  .image-hover:hover .thumb-title1 {
+  background: #1adde4;
+  font-size: 12px;
+  }
+
+  .thumb-title1 {
+    padding: 7px 15px;
+    background: #000;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+
+  .shadow1
+  {
+    height: 345px !important;
+    overflow:auto;
+  }

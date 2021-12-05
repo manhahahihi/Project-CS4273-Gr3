@@ -1,3 +1,25 @@
-.todo-list {
-  margin-left: 100px;
+
+.darkToast{
+	background:#494d66;
+	color:#ffffff;
+	border-radius: 4px;
+	font-weight: 500;
+}
+.progressbar{
+
+	color:#0099cc !important;
+	background-color:#0099cc !important;
+	height:3.5x; 
+
+}
+
+.pageView{
+	margin-left: 180px;
+	width: 1090px;
+  
+}
+
+.dialogFooter
+{
+	background-color: white !important;
 }
