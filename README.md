@@ -14,9 +14,11 @@ UI / UX prototype: [here](https://www.figma.com/file/UjL1qq9slTFCXCf6eIXR9X/Unti
 Tech stacks:
 
 - Front-end: reactjs
-- Back-end: reactjs
+- Back-end: nodejs
 - Database: MongoDB
-- ...
+- Login 
++ ID: 19521827@gm.uit.edu.vn
++ Password: 123456
 
 
 
