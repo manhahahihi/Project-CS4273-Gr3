@@ -18,6 +18,6 @@ Tech stacks:
 - Database: MongoDB
 - ...
 
-Demo online: [link to website - update later]
+
 
 
